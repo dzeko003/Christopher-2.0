@@ -731,3 +731,617 @@ textarea {
     gap: 10px;
   }
 }
+
+/* ==================================================
+   PAGES INTÉRIEURES
+   ================================================== */
+
+/* ========================= NAVIGATION (ACTIF + MOBILE) ========================= */
+.nav-links a.active {
+  color: var(--gold);
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+.menu-toggle span {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: white;
+  transition: 0.3s;
+}
+.menu-toggle[aria-expanded="true"] span:first-child {
+  transform: translateY(3.5px) rotate(45deg);
+}
+.menu-toggle[aria-expanded="true"] span:last-child {
+  transform: translateY(-3.5px) rotate(-45deg);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ========================= EN-TÊTE DE PAGE ========================= */
+.page-hero {
+  position: relative;
+  min-height: 65vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  padding: 160px 30px 90px;
+}
+.page-hero .hero-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.45));
+}
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+.page-hero h1 {
+  font-family: var(--title-font);
+  font-size: clamp(46px, 7vw, 90px);
+  font-weight: 500;
+  line-height: 1.05;
+}
+.page-hero h1 span {
+  color: var(--gold);
+}
+.page-hero p:not(.small-title) {
+  margin-top: 22px;
+  color: #eeeeee;
+  font-size: 17px;
+}
+.breadcrumb {
+  margin-top: 30px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #cfcfc8;
+}
+.breadcrumb a {
+  color: var(--gold);
+}
+
+/* ========================= MAISONS (DÉTAIL) ========================= */
+.house-detail {
+  max-width: 1250px;
+  margin: auto;
+  padding: 110px 30px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+  scroll-margin-top: 20px;
+}
+.house-detail + .house-detail {
+  border-top: 1px solid #e2ded3;
+}
+.house-detail.reverse .house-gallery {
+  order: 2;
+}
+.house-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 260px 260px;
+  gap: 15px;
+}
+.house-gallery img {
+  height: 100%;
+  object-fit: cover;
+}
+.house-gallery img:first-child {
+  grid-row: span 2;
+}
+.house-info h2 {
+  font-family: var(--title-font);
+  font-size: clamp(38px, 4.5vw, 56px);
+  line-height: 1.15;
+  color: var(--dark);
+  font-weight: 500;
+}
+.house-info > p:not(.section-label) {
+  color: var(--gray);
+  margin-top: 20px;
+}
+.house-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 35px 0;
+  border-top: 1px solid #e2ded3;
+  border-bottom: 1px solid #e2ded3;
+}
+.house-meta div {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e2ded3;
+}
+.house-meta div:last-child {
+  border-right: none;
+}
+.house-meta strong {
+  font-family: var(--title-font);
+  font-size: 30px;
+  color: var(--gold);
+  line-height: 1.1;
+}
+.house-meta span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin-bottom: 35px;
+}
+.chips li {
+  border: 1px solid #d8d5cc;
+  padding: 6px 14px;
+  font-size: 12px;
+  color: var(--text);
+}
+
+/* ========================= GRILLE D'AVANTAGES ========================= */
+.perks {
+  background: var(--dark);
+  color: white;
+}
+.perks .section-header h2 {
+  color: white;
+}
+.perks-grid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #414139;
+}
+.perks-grid div {
+  padding: 40px 30px 20px 0;
+}
+.perks-grid div + div {
+  padding-left: 30px;
+  border-left: 1px solid #414139;
+}
+.perks-grid strong {
+  display: block;
+  color: var(--gold);
+  font-family: var(--title-font);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.perks-grid h3 {
+  font-family: var(--title-font);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.perks-grid p {
+  color: #bcbcb5;
+  font-size: 14px;
+}
+
+/* ========================= BANDEAU INFOS / HORAIRES ========================= */
+.info-band {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.info-band div {
+  background: white;
+  padding: 40px;
+}
+.info-band .section-label {
+  margin-bottom: 12px;
+}
+.info-band h3 {
+  font-family: var(--title-font);
+  font-size: 26px;
+  color: var(--dark);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.info-band p:not(.section-label) {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+/* ========================= CARTE DU RESTAURANT ========================= */
+.menu {
+  background: white;
+}
+.menu-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 90px;
+}
+.menu-category h3 {
+  font-family: var(--title-font);
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--dark);
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--gold);
+}
+.menu-item {
+  margin-bottom: 22px;
+}
+.menu-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark);
+}
+.menu-item p {
+  font-size: 14px;
+  color: var(--gray);
+}
+.menu-note {
+  max-width: 1150px;
+  margin: 50px auto 0;
+  text-align: center;
+  color: var(--gray);
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* ========================= GALERIE ========================= */
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.gallery-filters button {
+  background: none;
+  border: 1px solid #d8d5cc;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: var(--text);
+  transition: 0.3s;
+}
+.gallery-filters button:hover,
+.gallery-filters button.active {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: white;
+}
+.gallery {
+  max-width: 1300px;
+  margin: auto;
+  columns: 3;
+  column-gap: 20px;
+}
+.gallery figure {
+  position: relative;
+  margin-bottom: 20px;
+  break-inside: avoid;
+  overflow: hidden;
+}
+.gallery figure[hidden] {
+  display: none;
+}
+.gallery img {
+  transition: 0.5s;
+}
+.gallery figure:hover img {
+  transform: scale(1.04);
+}
+.gallery figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 20px 18px;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+/* ========================= À PROPOS ========================= */
+.story {
+  max-width: 1250px;
+  margin: auto;
+  padding: 130px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.story h2 {
+  font-family: var(--title-font);
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1.15;
+  color: var(--dark);
+  font-weight: 500;
+}
+.story-text > p:not(.section-label) {
+  color: var(--gray);
+  margin-top: 20px;
+}
+.story-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.story-images img {
+  height: 420px;
+  object-fit: cover;
+}
+.story-images img:last-child {
+  margin-top: 60px;
+}
+.values {
+  background: white;
+}
+.values-grid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.values-grid article {
+  background: var(--cream);
+  padding: 45px 35px;
+}
+.values-grid strong {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.values-grid h3 {
+  font-family: var(--title-font);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--dark);
+  margin: 10px 0 12px;
+}
+.values-grid p {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+/* ========================= BANDEAU D'APPEL ========================= */
+.cta-band {
+  position: relative;
+  padding: 130px 30px;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+.cta-band .hero-overlay {
+  background: rgba(21, 21, 18, 0.75);
+}
+.cta-band > div:last-child {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+  margin: auto;
+}
+.cta-band h2 {
+  font-family: var(--title-font);
+  font-size: clamp(38px, 5vw, 60px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+.cta-band p:not(.section-label) {
+  color: #dcdcd5;
+  margin: 20px 0 35px;
+}
+
+/* ========================= RÉSERVATION / FAQ ========================= */
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+}
+.contact-form select {
+  width: 100%;
+  padding: 17px 18px;
+  border: none;
+  border-bottom: 1px solid #d8d5cc;
+  background: var(--cream);
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text);
+}
+.contact-form select:focus {
+  border-bottom-color: var(--gold);
+}
+.faq {
+  background: var(--cream);
+}
+.faq-list {
+  max-width: 900px;
+  margin: auto;
+}
+.faq-list details {
+  border-bottom: 1px solid #d8d5cc;
+  padding: 25px 0;
+}
+.faq-list summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: var(--title-font);
+  font-size: 22px;
+  color: var(--dark);
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: "+";
+  color: var(--gold);
+  font-family: var(--body-font);
+  transition: 0.3s;
+}
+.faq-list details[open] summary::after {
+  transform: rotate(45deg);
+}
+.faq-list details p {
+  margin-top: 15px;
+  color: var(--gray);
+  max-width: 750px;
+}
+
+/* ========================= FOOTER (LIENS) ========================= */
+.footer-links {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid #33332e;
+  list-style: none;
+}
+.footer-links a {
+  color: #ccccc4;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+/* ========================= RESPONSIVE PAGES — TABLETTE ========================= */
+@media (max-width: 950px) {
+  .house-detail,
+  .story {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .house-detail.reverse .house-gallery {
+    order: 0;
+  }
+  .perks-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .perks-grid div:nth-child(3) {
+    padding-left: 0;
+    border-left: none;
+  }
+  .info-band,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .gallery {
+    columns: 2;
+  }
+}
+
+/* ========================= RESPONSIVE PAGES — MOBILE ========================= */
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 3%;
+    right: 3%;
+    flex-direction: column;
+    gap: 0;
+    background: var(--dark);
+    padding: 10px 25px;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links li + li {
+    border-top: 1px solid #33332e;
+  }
+  .nav-links a {
+    display: block;
+    padding: 14px 0;
+    font-size: 15px;
+  }
+  .page-hero {
+    min-height: 55vh;
+    padding: 130px 20px 70px;
+  }
+  .house-detail {
+    padding: 80px 20px;
+  }
+  .house-gallery {
+    grid-template-rows: 180px 180px;
+  }
+  .house-meta strong {
+    font-size: 24px;
+  }
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+  .perks-grid div,
+  .perks-grid div + div {
+    padding: 30px 0 10px;
+    border-left: none;
+  }
+  .perks-grid div + div {
+    border-top: 1px solid #414139;
+  }
+  .info-band div {
+    padding: 30px 25px;
+  }
+  .gallery {
+    columns: 1;
+  }
+  .story {
+    padding: 90px 20px;
+  }
+  .story-images img {
+    height: 280px;
+  }
+  .story-images img:last-child {
+    margin-top: 40px;
+  }
+  .cta-band {
+    padding: 90px 20px;
+  }
+  .faq-list summary {
+    font-size: 19px;
+  }
+}

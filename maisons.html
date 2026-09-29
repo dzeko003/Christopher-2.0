@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Christopher 2.0 - Découvrez nos maisons : Maison Christopher, Maison Prestige et Villa Christopher." />
+    <title>Nos maisons | Christopher 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Police Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========================= NAVIGATION ========================== -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <span>CHRISTOPHER</span> <strong>2.0</strong>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="maisons.html" class="active" aria-current="page">Nos maisons</a></li>
+          <li><a href="piscine.html">Piscine</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="contact.html" class="nav-button"> Réserver </a>
+          <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ========================= EN-TÊTE DE PAGE ========================== -->
+      <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85')">
+        <div class="hero-overlay"></div>
+        <div class="page-hero-content">
+          <p class="small-title">HÉBERGEMENT</p>
+          <h1>Nos <span>maisons</span></h1>
+          <p>Trois adresses, une même promesse : confort, intimité et sérénité.</p>
+          <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; Nos maisons</p>
+        </div>
+      </section>
+      <section id="maison-christopher" class="house-detail">
+        <div class="house-gallery">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Maison Christopher" />
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1000&q=85" alt="Chambre de la Maison Christopher" />
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1000&q=85" alt="Salle d'eau" />
+        </div>
+        <div class="house-info">
+          <p class="section-label">01 — PREMIUM</p>
+          <h2>Maison Christopher</h2>
+          <p>Une maison élégante et confortable, idéale pour un séjour paisible. Ses volumes lumineux et sa décoration soignée en font le point de chute parfait pour un couple ou une petite famille.</p>
+          <div class="house-meta">
+            <div><strong>2</strong> <span>Chambres</span></div>
+            <div><strong>4</strong> <span>Personnes</span></div>
+            <div><strong>1</strong> <span>Salon</span></div>
+          </div>
+          <ul class="chips">
+            <li>Climatisation</li>
+            <li>Wi-Fi</li>
+            <li>Cuisine équipée</li>
+            <li>Terrasse</li>
+            <li>Parking</li>
+          </ul>
+          <a href="contact.html?maison=maison-christopher" class="primary-button"> Réserver cette maison </a>
+        </div>
+      </section>
+      <section id="maison-prestige" class="house-detail reverse">
+        <div class="house-gallery">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85" alt="Intérieur de la Maison Prestige" />
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85" alt="Salon" />
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1000&q=85" alt="Chambre" />
+        </div>
+        <div class="house-info">
+          <p class="section-label">02 — CONFORT</p>
+          <h2>Maison Prestige</h2>
+          <p>Un espace raffiné conçu pour accueillir vos séjours et vos moments importants. Plus spacieuse, elle accueille confortablement les familles et les petits groupes.</p>
+          <div class="house-meta">
+            <div><strong>3</strong> <span>Chambres</span></div>
+            <div><strong>6</strong> <span>Personnes</span></div>
+            <div><strong>2</strong> <span>Salles d'eau</span></div>
+          </div>
+          <ul class="chips">
+            <li>Climatisation</li>
+            <li>Wi-Fi</li>
+            <li>Cuisine équipée</li>
+            <li>Espace repas</li>
+            <li>Accès piscine</li>
+          </ul>
+          <a href="contact.html?maison=maison-prestige" class="primary-button"> Réserver cette maison </a>
+        </div>
+      </section>
+      <section id="villa-christopher" class="house-detail">
+        <div class="house-gallery">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Villa Christopher" />
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85" alt="Extérieur de la villa" />
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1000&q=85" alt="Salle de bain" />
+        </div>
+        <div class="house-info">
+          <p class="section-label">03 — EXCLUSIVE</p>
+          <h2>Villa Christopher</h2>
+          <p>Un cadre exceptionnel pour profiter pleinement de votre séjour. La villa offre le plus d'espace et d'intimité, pour les grandes familles comme pour les événements privés.</p>
+          <div class="house-meta">
+            <div><strong>4</strong> <span>Chambres</span></div>
+            <div><strong>8</strong> <span>Personnes</span></div>
+            <div><strong>1</strong> <span>Jardin privé</span></div>
+          </div>
+          <ul class="chips">
+            <li>Climatisation</li>
+            <li>Wi-Fi</li>
+            <li>Cuisine équipée</li>
+            <li>Jardin</li>
+            <li>Accès piscine</li>
+            <li>Parking</li>
+          </ul>
+          <a href="contact.html?maison=villa-christopher" class="primary-button"> Réserver cette maison </a>
+        </div>
+      </section>
+      <!-- ========================= INCLUS ========================== -->
+      <section class="section perks">
+        <div class="section-header">
+          <div>
+            <p class="section-label">INCLUS DANS CHAQUE SÉJOUR</p>
+            <h2>Tout est pensé pour vous.</h2>
+          </div>
+          <p>Quelle que soit la maison choisie, vous profitez des mêmes services et de la même attention.</p>
+        </div>
+        <div class="perks-grid">
+          <div><strong>01</strong><h3>Accueil personnalisé</h3><p>Une équipe disponible pour préparer votre arrivée et répondre à vos besoins.</p></div>
+          <div><strong>02</strong><h3>Linge &amp; ménage</h3><p>Linge de maison fourni et entretien régulier pendant votre séjour.</p></div>
+          <div><strong>03</strong><h3>Accès piscine</h3><p>Profitez librement de l'espace piscine et de ses transats.</p></div>
+          <div><strong>04</strong><h3>Restaurant sur place</h3><p>Petit-déjeuner, déjeuner ou dîner à quelques pas de votre maison.</p></div>
+        </div>
+      </section>
+      <!-- ========================= APPEL À L'ACTION ========================== -->
+      <section class="cta-band" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=85')">
+        <div class="hero-overlay"></div>
+        <div>
+          <p class="section-label">DISPONIBILITÉS</p>
+          <h2>Votre maison vous attend.</h2>
+          <p>Indiquez-nous vos dates et le nombre de personnes : nous vous répondons avec nos disponibilités et nos tarifs.</p>
+          <a href="contact.html" class="primary-button"> Réserver votre séjour </a>
+        </div>
+      </section>
+    </main>
+    <!-- ========================= FOOTER ========================== -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span>CHRISTOPHER</span> <strong>2.0</strong>
+        </div>
+        <p>L'élégance, le confort et l'expérience.</p>
+        <div class="socials">
+          <a href="#">Facebook</a> <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="maisons.html">Nos maisons</a></li>
+        <li><a href="piscine.html">Piscine</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-bottom">
+        <p>© 2026 Christopher 2.0. Tous droits réservés.</p>
+        <p>Hôtel · Maisons · Piscine · Restaurant</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Christopher 2.0 - Restaurant : carte, spécialités, horaires et réservation." />
+    <title>Restaurant | Christopher 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Police Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========================= NAVIGATION ========================== -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <span>CHRISTOPHER</span> <strong>2.0</strong>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="maisons.html">Nos maisons</a></li>
+          <li><a href="piscine.html">Piscine</a></li>
+          <li><a href="restaurant.html" class="active" aria-current="page">Restaurant</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="contact.html" class="nav-button"> Réserver </a>
+          <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ========================= EN-TÊTE DE PAGE ========================== -->
+      <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=85')">
+        <div class="hero-overlay"></div>
+        <div class="page-hero-content">
+          <p class="small-title">GASTRONOMIE</p>
+          <h1>Le <span>restaurant</span></h1>
+          <p>Une cuisine généreuse dans un cadre élégant.</p>
+          <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; Restaurant</p>
+        </div>
+      </section>
+      <!-- ========================= PRÉSENTATION ========================== -->
+      <section class="story">
+        <div class="story-images">
+          <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=85" alt="Plat du restaurant" />
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=85" alt="Assiette gourmande" />
+        </div>
+        <div class="story-text">
+          <p class="section-label">À TABLE</p>
+          <h2>Savourez<br />chaque instant.</h2>
+          <p>
+            Notre restaurant vous propose un espace chaleureux pour partager un
+            repas, célébrer une occasion ou simplement profiter du moment.
+          </p>
+          <p>
+            Saveurs locales et classiques revisités : notre cuisine met à
+            l'honneur des produits frais, préparés avec générosité.
+          </p>
+          <a href="#carte" class="text-link"> Voir la carte → </a>
+        </div>
+      </section>
+      <!-- ========================= CARTE ========================== -->
+      <section id="carte" class="section menu">
+        <div class="section-header centered">
+          <p class="section-label">LA CARTE</p>
+          <h2>Nos spécialités</h2>
+          <p>Une sélection de nos plats. La carte évolue au fil des saisons et des arrivages.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-category">
+            <h3>Entrées</h3>
+            <div class="menu-item">
+              <h4>Salade Christopher</h4>
+              <p>Crudités de saison, avocat et vinaigrette maison.</p>
+            </div>
+            <div class="menu-item">
+              <h4>Beignets de poisson</h4>
+              <p>Poisson frais, sauce pimentée douce.</p>
+            </div>
+            <div class="menu-item">
+              <h4>Brochettes</h4>
+              <p>Viande marinée, grillée au feu de bois.</p>
+            </div>
+          </div>
+          <div class="menu-category">
+            <h3>Plats</h3>
+            <div class="menu-item">
+              <h4>Poisson braisé</h4>
+              <p>Poisson entier, bananes plantains et sauce tomate-oignons.</p>
+            </div>
+            <div class="menu-item">
+              <h4>Poulet à la moambé</h4>
+              <p>Poulet mijoté dans la sauce de noix de palme, riz blanc.</p>
+            </div>
+            <div class="menu-item">
+              <h4>Saka-saka</h4>
+              <p>Feuilles de manioc, poisson fumé, accompagné de chikwangue.</p>
+            </div>
+          </div>
+          <div class="menu-category">
+            <h3>Grillades</h3>
+            <div class="menu-item">
+              <h4>Côtes de porc grillées</h4>
+              <p>Marinade maison, frites ou plantains.</p>
+            </div>
+            <div class="menu-item">
+              <h4>Brochettes de bœuf</h4>
+              <p>Épices douces, légumes grillés.</p>
+            </div>
+            <div class="menu-item">
+              <h4>Assiette mixte</h4>
+              <p>Sélection de viandes grillées à partager.</p>
+            </div>
+          </div>
+          <div class="menu-category">
+            <h3>Desserts &amp; boissons</h3>
+            <div class="menu-item">
+              <h4>Salade de fruits frais</h4>
+              <p>Fruits de saison, sirop léger.</p>
+            </div>
+            <div class="menu-item">
+              <h4>Moelleux au chocolat</h4>
+              <p>Cœur fondant, servi tiède.</p>
+            </div>
+            <div class="menu-item">
+              <h4>Jus naturels</h4>
+              <p>Gingembre, bissap, ananas, selon arrivage.</p>
+            </div>
+          </div>
+        </div>
+        <p class="menu-note">Tarifs et plats du jour communiqués sur place ou sur demande.</p>
+      </section>
+      <!-- ========================= HORAIRES ========================== -->
+      <section class="section restaurant">
+        <div class="info-band">
+          <div>
+            <p class="section-label">PETIT-DÉJEUNER</p>
+            <h3>7 h – 10 h 30</h3>
+            <p>Servi tous les jours, pour les résidents comme pour les visiteurs.</p>
+          </div>
+          <div>
+            <p class="section-label">DÉJEUNER</p>
+            <h3>12 h – 15 h</h3>
+            <p>Formules du jour et carte complète.</p>
+          </div>
+          <div>
+            <p class="section-label">DÎNER</p>
+            <h3>19 h – 23 h</h3>
+            <p>Réservation conseillée le week-end.</p>
+          </div>
+        </div>
+      </section>
+      <!-- ========================= APPEL À L'ACTION ========================== -->
+      <section class="cta-band" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=85')">
+        <div class="hero-overlay"></div>
+        <div>
+          <p class="section-label">RÉSERVATION</p>
+          <h2>Une table vous attend.</h2>
+          <p>Repas en famille, dîner d'affaires ou célébration : réservez votre table ou confiez-nous votre événement.</p>
+          <a href="contact.html?type=restaurant" class="primary-button"> Réserver une table </a>
+        </div>
+      </section>
+    </main>
+    <!-- ========================= FOOTER ========================== -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span>CHRISTOPHER</span> <strong>2.0</strong>
+        </div>
+        <p>L'élégance, le confort et l'expérience.</p>
+        <div class="socials">
+          <a href="#">Facebook</a> <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="maisons.html">Nos maisons</a></li>
+        <li><a href="piscine.html">Piscine</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-bottom">
+        <p>© 2026 Christopher 2.0. Tous droits réservés.</p>
+        <p>Hôtel · Maisons · Piscine · Restaurant</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

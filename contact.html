@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Christopher 2.0 - Réservez une maison, une table ou un événement et contactez-nous." />
+    <title>Réserver & contact | Christopher 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Police Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========================= NAVIGATION ========================== -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <span>CHRISTOPHER</span> <strong>2.0</strong>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="maisons.html">Nos maisons</a></li>
+          <li><a href="piscine.html">Piscine</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="contact.html" class="nav-button"> Réserver </a>
+          <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ========================= EN-TÊTE DE PAGE ========================== -->
+      <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=2000&q=85')">
+        <div class="hero-overlay"></div>
+        <div class="page-hero-content">
+          <p class="small-title">CONTACT</p>
+          <h1>Réserver &amp; <span>contact</span></h1>
+          <p>Une question, une réservation, un événement ? Écrivez-nous.</p>
+          <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; Contact</p>
+        </div>
+      </section>
+      <!-- ========================= RÉSERVATION ========================== -->
+      <section class="contact section">
+        <div class="contact-container">
+          <div class="contact-info">
+            <p class="section-label">RÉSERVATION</p>
+            <h2>
+              Préparez votre<br />
+              prochaine expérience.
+            </h2>
+            <p>
+              Vous souhaitez réserver une maison, une table ou organiser un
+              événement ? Remplissez le formulaire, votre demande s'ouvrira
+              dans votre messagerie, prête à être envoyée.
+            </p>
+            <div class="contact-details">
+              <div>
+                <span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" />
+                  </svg>
+                </span>
+                <p>république du Congo</p>
+              </div>
+              <div>
+                <span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z" />
+                  </svg>
+                </span>
+                <p><a href="tel:+242069941291">+242 069941291</a></p>
+              </div>
+              <div>
+                <span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+                  </svg>
+                </span>
+                <p><a href="mailto:christopher8@gmail.com">christopher8@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <label>
+              Type de demande
+              <select name="objet" data-label="Type de demande">
+                <option value="Réservation d'une maison">Réservation d'une maison</option>
+                <option value="Réservation au restaurant" data-type="restaurant">Réservation au restaurant</option>
+                <option value="Organisation d'un événement" data-type="evenement">Organisation d'un événement</option>
+                <option value="Demande d'information">Demande d'information</option>
+              </select>
+            </label>
+            <label>
+              Maison souhaitée
+              <select name="maison" data-label="Maison">
+                <option value="">Peu importe</option>
+                <option value="Maison Christopher" data-id="maison-christopher">Maison Christopher</option>
+                <option value="Maison Prestige" data-id="maison-prestige">Maison Prestige</option>
+                <option value="Villa Christopher" data-id="villa-christopher">Villa Christopher</option>
+              </select>
+            </label>
+            <div class="form-row">
+              <label>
+                Arrivée / date
+                <input type="date" name="arrivee" data-label="Arrivée" />
+              </label>
+              <label>
+                Départ
+                <input type="date" name="depart" data-label="Départ" />
+              </label>
+            </div>
+            <div class="form-row">
+              <input type="text" name="nom" placeholder="Votre nom" required />
+              <input type="email" name="email" placeholder="Votre email" required />
+            </div>
+            <div class="form-row">
+              <input type="tel" name="telephone" placeholder="Votre téléphone" />
+              <input type="number" name="personnes" min="1" placeholder="Nombre de personnes" />
+            </div>
+            <textarea rows="6" name="message" placeholder="Votre message..." required></textarea>
+            <button type="submit">Envoyer la demande →</button>
+          </form>
+        </div>
+      </section>
+      <!-- ========================= FAQ ========================== -->
+      <section class="section faq">
+        <div class="section-header centered">
+          <p class="section-label">QUESTIONS FRÉQUENTES</p>
+          <h2>Bon à savoir</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Comment confirmer ma réservation ?</summary>
+            <p>Après réception de votre demande, notre équipe vous recontacte par téléphone ou par email pour confirmer les disponibilités, le tarif et les modalités de paiement.</p>
+          </details>
+          <details>
+            <summary>Le restaurant est-il ouvert aux visiteurs ?</summary>
+            <p>Oui, le restaurant accueille aussi bien les résidents que les visiteurs extérieurs. La réservation est conseillée le week-end.</p>
+          </details>
+          <details>
+            <summary>Peut-on organiser un événement sur place ?</summary>
+            <p>Anniversaires, mariages, réunions de famille ou séminaires : l'espace piscine et le restaurant peuvent être privatisés. Décrivez votre projet dans le formulaire pour recevoir une proposition.</p>
+          </details>
+          <details>
+            <summary>L'accès à la piscine est-il inclus ?</summary>
+            <p>L'accès à la piscine est inclus pour les résidents des maisons. Les visiteurs peuvent y accéder sur réservation.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <!-- ========================= FOOTER ========================== -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span>CHRISTOPHER</span> <strong>2.0</strong>
+        </div>
+        <p>L'élégance, le confort et l'expérience.</p>
+        <div class="socials">
+          <a href="#">Facebook</a> <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="maisons.html">Nos maisons</a></li>
+        <li><a href="piscine.html">Piscine</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-bottom">
+        <p>© 2026 Christopher 2.0. Tous droits réservés.</p>
+        <p>Hôtel · Maisons · Piscine · Restaurant</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

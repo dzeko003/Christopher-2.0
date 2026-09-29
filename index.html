@@ -25,13 +25,19 @@
           <span>CHRISTOPHER</span> <strong>2.0</strong>
         </a>
         <ul class="nav-links">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#maisons">Nos maisons</a></li>
-          <li><a href="#piscine">Piscine</a></li>
-          <li><a href="#restaurant">Restaurant</a></li>
-          <li><a href="#apropos">À propos</a></li>
+          <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
+          <li><a href="maisons.html">Nos maisons</a></li>
+          <li><a href="piscine.html">Piscine</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
         </ul>
-        <a href="#contact" class="nav-button"> Réserver </a>
+        <div class="nav-actions">
+          <a href="contact.html" class="nav-button"> Réserver </a>
+          <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
       </nav>
     </header>
     <!-- ========================= HERO ========================== -->
@@ -69,7 +75,7 @@
             restaurant pour vivre des moments uniques en famille, entre amis ou
             pour vos événements.
           </p>
-          <a href="#apropos" class="text-link"> En savoir plus → </a>
+          <a href="a-propos.html" class="text-link"> En savoir plus → </a>
         </div>
         <div class="intro-image">
           <img
@@ -110,7 +116,7 @@
                 Une maison élégante et confortable, idéale pour un séjour
                 paisible.
               </p>
-              <a href="#contact"> Découvrir → </a>
+              <a href="maisons.html#maison-christopher"> Découvrir → </a>
             </div>
           </article>
           <article class="card">
@@ -128,7 +134,7 @@
                 Un espace raffiné conçu pour accueillir vos séjours et vos
                 moments importants.
               </p>
-              <a href="#contact"> Découvrir → </a>
+              <a href="maisons.html#maison-prestige"> Découvrir → </a>
             </div>
           </article>
           <article class="card">
@@ -145,7 +151,7 @@
               <p>
                 Un cadre exceptionnel pour profiter pleinement de votre séjour.
               </p>
-              <a href="#contact"> Découvrir → </a>
+              <a href="maisons.html#villa-christopher"> Découvrir → </a>
             </div>
           </article>
         </div>
@@ -173,6 +179,7 @@
             <li>✓ Moments en famille</li>
           </ul>
           <a href="#contact" class="primary-button"> Réserver votre séjour </a>
+          <a href="piscine.html" class="text-link" style="color: white; width: fit-content"> Découvrir l'espace piscine → </a>
         </div>
       </section>
       <!-- ========================= RESTAURANT ========================== -->
@@ -211,6 +218,8 @@
                 un repas, célébrer une occasion ou simplement profiter du
                 moment.
               </p>
+              <a href="restaurant.html#carte" class="text-link"> Voir la carte → </a>
+              &nbsp;&nbsp;
               <a href="#contact" class="text-link"> Nous contacter → </a>
             </div>
           </div>
@@ -330,10 +339,20 @@
           <a href="#">WhatsApp</a>
         </div>
       </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="maisons.html">Nos maisons</a></li>
+        <li><a href="piscine.html">Piscine</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
       <div class="footer-bottom">
         <p>© 2026 Christopher 2.0. Tous droits réservés.</p>
         <p>Hôtel · Maisons · Piscine · Restaurant</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
